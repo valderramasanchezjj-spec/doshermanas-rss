@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Dos Hermanas - Notas de prensa (RSS no oficial)</title>
+    <link>https://www.doshermanas.es/rss.xml</link>
+    <description>Feed generado automáticamente a partir del listado de notas de prensa.</description>
+    <atom:link href="https://www.doshermanas.es/rss.xml" rel="self"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 26 Feb 2026 13:36:03 +0000</lastBuildDate>
+    <item>
+      <title>IR AL BUSCADOR AVANZADO DE NOTAS DE PRENSA</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/buscador-avanzado-de-notas-de-prensa/</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/buscador-avanzado-de-notas-de-prensa/</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>&gt;&gt;</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=200</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=200</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>&gt;</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=2</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=2</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>5</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=5</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=5</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>4</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=4</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=4</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>3</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=3</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=3</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>2</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=2</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=2</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>1</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=1</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/index.html?psolrlist=1</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Comienzan en Dos Hermanas las jornadas gratuitas de formación de la Escuela para el Deport...</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/Comienzan-en-Dos-Hermanas-las-jornadas-gratuitas-de-formacion-de-la-Escuela-para-el-Deporte/</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/Comienzan-en-Dos-Hermanas-las-jornadas-gratuitas-de-formacion-de-la-Escuela-para-el-Deporte/</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>El Ayuntamiento de Dos Hermanas programa los actos conmemorativos del 28F, con motivo del ...</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/El-Ayuntamiento-de-Dos-Hermanas-programa-los-actos-conmemorativos-del-28F-con-motivo-del-Dia-de-Andalucia/</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/El-Ayuntamiento-de-Dos-Hermanas-programa-los-actos-conmemorativos-del-28F-con-motivo-del-Dia-de-Andalucia/</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>El alcalde Paco Rodríguez reclama a la Junta de Andalucía el cumplimiento de sus compromis...</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/El-alcalde-Paco-Rodriguez-reclama-a-la-Junta-de-Andalucia-el-cumplimiento-de-sus-compromisos-con-Dos-Hermanas/</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/El-alcalde-Paco-Rodriguez-reclama-a-la-Junta-de-Andalucia-el-cumplimiento-de-sus-compromisos-con-Dos-Hermanas/</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>El Ayuntamiento de Dos Hermanas refuerza, a partir del próximo 2 de marzo, la Línea 5 del ...</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/El-Ayuntamiento-de-Dos-Hermanas-refuerza-a-partir-del-proximo-2-de-marzo-la-Linea-5-del-transporte-colectivo-urbano-de-viajeros-en-dias-lectivos/</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/El-Ayuntamiento-de-Dos-Hermanas-refuerza-a-partir-del-proximo-2-de-marzo-la-Linea-5-del-transporte-colectivo-urbano-de-viajeros-en-dias-lectivos/</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Dos Hermanas continúa ejecutando el plan extraordinario de arreglo del asfalto tras las ll...</title>
+      <link>https://www.doshermanas.es/noticias/notas-de-prensa/Dos-Hermanas-continua-ejecutando-el-plan-extraordinario-de-arreglo-del-asfalto-tras-las-lluvias/</link>
+      <guid isPermaLink="false">https://www.doshermanas.es/noticias/notas-de-prensa/Dos-Hermanas-continua-ejecutando-el-plan-extraordinario-de-arreglo-del-asfalto-tras-las-lluvias/</guid>
+      <pubDate>Thu, 26 Feb 2026 13:36:03 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
