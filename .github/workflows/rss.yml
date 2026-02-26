@@ -1,5 +1,7 @@
 name: Generate RSS
-
+requests
+beautifulsoup4
+feedgen
 on:
   schedule:
     - cron: "0 * * * *"   # cada hora
