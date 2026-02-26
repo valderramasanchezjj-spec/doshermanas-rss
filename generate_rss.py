@@ -7,66 +7,64 @@ from feedgen.feed import FeedGenerator
 
 BASE_URL = "https://www.doshermanas.es"
 LIST_URL = "https://www.doshermanas.es/noticias/notas-de-prensa/"
+FEED_URL = "https://valderramasanchezjj-spec.github.io/doshermanas-rss/rss.xml"
 
-UA = "Mozilla/5.0 (RSS generator) Python"
+UA = "Mozilla/5.0"
 TIMEOUT = 20
 
-def pick_items(html: str):
-    soup = BeautifulSoup(html, "html.parser")
-    main = soup.find("main") or soup.find("div", {"id": "content"}) or soup.body
+def get_article_data(url):
+    r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT)
+    soup = BeautifulSoup(r.text, "html.parser")
 
-    items = []
-    seen = set()
+    title = soup.find("h1")
+    title = title.get_text(strip=True) if title else "Sin título"
 
-    for a in main.find_all("a", href=True):
-        title = " ".join(a.get_text(" ", strip=True).split())
-        if not title:
-            continue
+    # Subtítulo o primer párrafo
+    subtitle = soup.find("p")
+    subtitle = subtitle.get_text(strip=True) if subtitle else ""
 
-        url = urljoin(BASE_URL, a["href"].strip())
+    # Imagen principal
+    img = soup.find("img")
+    img_url = urljoin(BASE_URL, img["src"]) if img and img.get("src") else None
 
-        # Nos quedamos con enlaces que parezcan artículos/noticias
-        if "/noticias/" not in url:
-            continue
+    return title, subtitle, img_url
 
-        key = (title, url)
-        if key in seen:
-            continue
-        seen.add(key)
-        items.append((title, url))
-
-    return items[:30]
 
 def main():
     r = requests.get(LIST_URL, headers={"User-Agent": UA}, timeout=TIMEOUT)
-    r.raise_for_status()
-
-    items = pick_items(r.text)
-    if not items:
-        raise SystemExit("No se pudieron extraer items. Hay que ajustar selectores.")
+    soup = BeautifulSoup(r.text, "html.parser")
 
     fg = FeedGenerator()
-    fg.id(LIST_URL)
-    fg.title("Dos Hermanas - Notas de prensa (RSS no oficial)")
+    fg.id(FEED_URL)
+    fg.title("Dos Hermanas - Notas de prensa")
     fg.link(href=LIST_URL, rel="alternate")
-    fg.link(href=urljoin(BASE_URL, "/rss.xml"), rel="self")
+    fg.link(href=FEED_URL, rel="self")
     fg.language("es")
-    fg.description("Feed generado automáticamente a partir del listado de notas de prensa.")
+    fg.description("Feed automático generado desde la web oficial")
 
-    now = datetime.now(timezone.utc)
+    links = soup.select("a[href*='/noticias/']")
+    added = set()
 
-    for title, url in items:
+    for a in links[:10]:
+        url = urljoin(BASE_URL, a["href"])
+        if url in added:
+            continue
+        added.add(url)
+
+        title, subtitle, img_url = get_article_data(url)
+
         fe = fg.add_entry()
         fe.id(url)
         fe.title(title)
         fe.link(href=url)
-        fe.published(now)
-        fe.updated(now)
+        fe.description(subtitle)
+        fe.published(datetime.now(timezone.utc))
 
-    with open("rss.xml", "wb") as f:
-        f.write(fg.rss_str(pretty=True))
+        if img_url:
+            fe.enclosure(img_url, 0, "image/jpeg")
 
-    print(f"OK: generado rss.xml con {len(items)} items")
+    fg.rss_file("rss.xml")
+
 
 if __name__ == "__main__":
     main()
